@@ -52,8 +52,8 @@ let pageSpacing: CGFloat = leading / 2
 let overlap: CGFloat = pageSpacing * 3
 let rotateAngel: CGFloat = .pi / 36
 public let headerViewHeight: CGFloat = 50
-let footerViewNormalHeight: CGFloat = 0
-let footerViewDisabledHeight: CGFloat = 0
+let footerViewNormalHeight: CGFloat = 50
+let footerViewDisabledHeight: CGFloat = 15
 let newBoardButtonViewHeight: CGFloat = 56.0
 let newBoardComposeViewHeight: CGFloat = 122.0
 let newCellComposeViewTextFieldHeight: CGFloat = 40.0
@@ -101,7 +101,7 @@ var currentOrientation: STTableBoardOrientation {
 }
 
 var localizedString: [String: String] = [
-    "STTableBoard.AddRow": "添加任务...",
+    "STTableBoard.AddRow": "Add",
     "STTableBoard.AddBoard": "添加阶段...",
     "STTableBoard.BoardMenuTextViewController.Title": "编辑阶段名称",
     "STTableBoard.EditBoardNameCell.Title": "编辑阶段",

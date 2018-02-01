@@ -38,7 +38,7 @@ extension ViewController: STTableBoardDelegate {
         }
         return true
     }
-
+//ADD BUTTON ACTION
     func customAddRowAction(for tableBoard: STTableBoard, at boardIndex: Int) -> (() -> Void)? {
         if boardIndex == 0 || boardIndex == 3 {
             return {
