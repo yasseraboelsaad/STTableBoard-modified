@@ -8,7 +8,7 @@
 
 import UIKit
 
-class STPageControl: UIPageControl {
+public class STPageControl: UIPageControl {
 
     var showAddDots: Bool = true
     public var customDotImageView: UIImageView? = nil
@@ -17,13 +17,13 @@ class STPageControl: UIPageControl {
     let activeAddPageControlImage = UIImage(named: "active_add", in: currentBundle, compatibleWith: nil)
     let inactiveAddPageControlImage = UIImage(named: "inactive_add", in: currentBundle, compatibleWith: nil)
 
-    override var currentPage: Int {
+    override public var currentPage: Int {
         didSet {
             updateDots()
         }
     }
 
-    override var numberOfPages: Int {
+    override public var numberOfPages: Int {
         didSet {
             if oldValue != numberOfPages {
                 customDotImageView?.removeFromSuperview()
@@ -36,7 +36,7 @@ class STPageControl: UIPageControl {
         super.init(frame: frame)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 

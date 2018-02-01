@@ -61,6 +61,7 @@ extension ViewController: STTableBoardDelegate {
         navigationController?.pushViewController(viewController, animated: true)
     }
     
+    
     func tableBoard(_ tableBoard: STTableBoard, canEditBoardTitleAt boardIndex: Int) -> Bool {
         return true
     }

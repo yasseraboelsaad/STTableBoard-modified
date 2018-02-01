@@ -124,10 +124,10 @@ open class STTableBoard: UIViewController {
     open var customBoardWidth: CGFloat = 280
     
     //Views Property
-    var boards: [STBoardView] = []
-    var scrollView: UIScrollView!
-    var containerView: UIView!
-    lazy var pageControl: STPageControl = {
+    public var boards: [STBoardView] = []
+    public var scrollView: UIScrollView!
+    public var containerView: UIView!
+    lazy public var pageControl: STPageControl = {
         let control = STPageControl(frame: CGRect.zero)
         control.backgroundColor = UIColor.clear
         control.currentPageIndicatorTintColor = currentPageIndicatorTintColor
