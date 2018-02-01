@@ -17,14 +17,14 @@ class STCardCell: STBoardCell {
         return view
     }()
     
-    public var checkBox: UIImageView!
-    public var avatar: UIImageView!
-    public var subtaskIcon: UIImageView!
-    public var commentIcon: UIImageView!
-    public var attachmentIcon: UIImageView!
+    fileprivate var checkBox: UIImageView!
+    fileprivate var avatar: UIImageView!
+    fileprivate var subtaskIcon: UIImageView!
+    fileprivate var commentIcon: UIImageView!
+    fileprivate var attachmentIcon: UIImageView!
     
-    public var titleLabel: UILabel!
-    public var subtaskLabel: UILabel!
+    fileprivate var titleLabel: UILabel!
+    fileprivate var subtaskLabel: UILabel!
     
     var title: String? {
         didSet {

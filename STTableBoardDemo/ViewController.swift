@@ -41,13 +41,13 @@ class ViewController: UIViewController {
     }()
 
     // all screen
-    public lazy var containerView: UIView = self.makeContainerView()
-    public lazy var exitFullScreenView: UIView = self.makeExitFullScreenView()
-    public var topConstraint: NSLayoutConstraint!
-    public var bottomConstraintForExitFullScreenView: NSLayoutConstraint!
-    public var isBarHidden: Bool = false
+    fileprivate lazy var containerView: UIView = self.makeContainerView()
+    fileprivate lazy var exitFullScreenView: UIView = self.makeExitFullScreenView()
+    fileprivate var topConstraint: NSLayoutConstraint!
+    fileprivate var bottomConstraintForExitFullScreenView: NSLayoutConstraint!
+    fileprivate var isBarHidden: Bool = false
     
-    public let enterFullScreenDuration: TimeInterval = 0.33
+    fileprivate let enterFullScreenDuration: TimeInterval = 0.33
     var isAnimatingForFullScreen: Bool = false
 
     override func viewDidLoad() {
@@ -109,13 +109,13 @@ extension ViewController {
 }
 
 extension ViewController {
-    public func makeContainerView() -> UIView {
+    fileprivate func makeContainerView() -> UIView {
         let view = UIView()
         view.backgroundColor = UIColor.darkGray
         return view
     }
 
-    public func makeExitFullScreenView() -> UIView {
+    fileprivate func makeExitFullScreenView() -> UIView {
         let containerView = UIView()
         containerView.backgroundColor = UIColor.white
         let exitButton = UIButton()
@@ -131,7 +131,7 @@ extension ViewController {
         return containerView
     }
 
-    public func configureTableBoard() {
+    fileprivate func configureTableBoard() {
         dataArray = [
             ["七里香1","七里香2","七里香3","七里香4","最后的战役1","最后的战役2","最后的战役3","晴天1","晴天2","晴天3","晴天4","晴天5","爱情悬崖1","爱情悬崖2","爱情悬崖3","爱情悬崖4","彩虹1","彩虹2","彩虹3","彩虹4"],
             ["彩虹1","彩虹2","彩虹3","彩虹4","彩虹5","彩虹6","最后的战役1","最后的战役2","最后的战役3","最后的战役1","最后的战役2","最后的战役3"],
@@ -155,7 +155,7 @@ extension ViewController {
         tableBoard.didMove(toParentViewController: self)
     }
 
-    public func setupContianerView() {
+    fileprivate func setupContianerView() {
         if let navigationBar = navigationController?.navigationBar {
             containerView.translatesAutoresizingMaskIntoConstraints = false
             view.insertSubview(containerView, belowSubview: navigationBar)
@@ -166,7 +166,7 @@ extension ViewController {
         }
     }
 
-    public func setupExitFullScreenView() {
+    fileprivate func setupExitFullScreenView() {
         view.insertSubview(exitFullScreenView, belowSubview: containerView)
         exitFullScreenView.translatesAutoresizingMaskIntoConstraints = false
         let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[exitFullScreenView]|", options: [], metrics: nil, views: ["exitFullScreenView": exitFullScreenView])
@@ -176,7 +176,7 @@ extension ViewController {
         exitFullScreenView.layoutIfNeeded()
     }
 
-    public func layoutView() {
+    fileprivate func layoutView() {
         tableBoard.view.translatesAutoresizingMaskIntoConstraints = false
         let views: [String: Any] = ["tableBoard": tableBoard.view]
         let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[tableBoard]|", options: [], metrics: nil, views: views)
@@ -193,7 +193,7 @@ extension ViewController {
         }
     }
 
-    public func animateExitFullScreenView() {
+    fileprivate func animateExitFullScreenView() {
         let constant = isBarHidden ? 0 : ExitFullScreenViewConstant.height
         bottomConstraintForExitFullScreenView.constant = constant
         UIView.animate(withDuration: 0.33) {
@@ -201,7 +201,7 @@ extension ViewController {
         }
     }
 
-    public func enterFullScreen() {
+    fileprivate func enterFullScreen() {
         guard !isBarHidden else {
             return
         }
@@ -223,7 +223,7 @@ extension ViewController {
         })
     }
 
-    public func exitFullScreen() {
+    fileprivate func exitFullScreen() {
         guard isBarHidden else {
             return
         }

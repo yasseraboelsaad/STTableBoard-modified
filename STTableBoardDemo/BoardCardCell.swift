@@ -10,13 +10,13 @@ import UIKit
 import STTableBoard
 
 class BoardCardCell: STBoardCell {
-    public lazy var cardView: CardView = {
+    fileprivate lazy var cardView: CardView = {
         let view = CardView()
         view.backgroundColor = UIColor.clear
         return view
     }()
 
-    public lazy var titleLabel: UILabel = {
+    fileprivate lazy var titleLabel: UILabel = {
         let label = UILabel(frame: CGRect.zero)
         label.numberOfLines = 2
         label.textAlignment = .left
@@ -26,25 +26,25 @@ class BoardCardCell: STBoardCell {
         return label
     }()
     
-    public lazy var checkBoxView: CheckBoxView = {
+    fileprivate lazy var checkBoxView: CheckBoxView = {
         let view = CheckBoxView(frame: CGRect.zero)
         view.checked = false
         return view
     }()
     
-    public lazy var avatarView: RoundAvatarImageView = {
+    fileprivate lazy var avatarView: RoundAvatarImageView = {
         let view = RoundAvatarImageView(frame: CGRect.zero)
         return view
     }()
     
-    public lazy var badgeListView: BadgeListView = {
+    fileprivate lazy var badgeListView: BadgeListView = {
         let view = BadgeListView()
         return view
     }()
     
     
     
-    public var hasLoadTag: Bool = false
+    fileprivate var hasLoadTag: Bool = false
     
     var titleText: String? {
         didSet {

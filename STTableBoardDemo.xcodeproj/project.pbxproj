@@ -181,7 +181,7 @@
 				TargetAttributes = {
 					EB793BA51C1E653400BF1148 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 2URCKT7NDY;
+						DevelopmentTeam = M28E27TNGL;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -366,7 +366,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2URCKT7NDY;
+				DEVELOPMENT_TEAM = M28E27TNGL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -375,7 +375,7 @@
 				INFOPLIST_FILE = STTableBoardDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.StormXX.STTableBoardDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Teambition.STTableBoardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -392,7 +392,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2URCKT7NDY;
+				DEVELOPMENT_TEAM = M28E27TNGL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -401,7 +401,7 @@
 				INFOPLIST_FILE = STTableBoardDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.StormXX.STTableBoardDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Teambition.STTableBoardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

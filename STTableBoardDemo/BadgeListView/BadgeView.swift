@@ -61,17 +61,17 @@ open class BadgeView: UIView {
         }
     }
     
-    public lazy var imageView: UIImageView = {
+    fileprivate lazy var imageView: UIImageView = {
         let imageView: UIImageView = UIImageView(frame: CGRect.zero)
         return imageView
     }()
     
-    public lazy var backgroundImageView: UIImageView = {
+    fileprivate lazy var backgroundImageView: UIImageView = {
         let imageView: UIImageView = UIImageView(frame: self.bounds)
         return imageView
     }()
     
-    public lazy var titleLabel: UILabel = {
+    fileprivate lazy var titleLabel: UILabel = {
         let label: UILabel = UILabel(frame: CGRect.zero)
         label.textAlignment = .left
         label.font = self.textFont
