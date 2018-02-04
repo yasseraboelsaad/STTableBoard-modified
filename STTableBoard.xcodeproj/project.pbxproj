@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B95E0A7202706BA00FB9BD7 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B95E0A6202706BA00FB9BD7 /* Montserrat-Medium.ttf */; };
 		EB2D5E9D1C42A51E00029B8F /* STTableBoard+Implement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E9C1C42A51E00029B8F /* STTableBoard+Implement.swift */; };
 		EB2D5E9F1C42A5C700029B8F /* STTableBoard+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E9E1C42A5C700029B8F /* STTableBoard+Public.swift */; };
 		EB3D687E1C3B6C7E00C6EAFD /* TextComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D687D1C3B6C7E00C6EAFD /* TextComposeView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B95E0A6202706BA00FB9BD7 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		EB2D5E9C1C42A51E00029B8F /* STTableBoard+Implement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STTableBoard+Implement.swift"; sourceTree = "<group>"; };
 		EB2D5E9E1C42A5C700029B8F /* STTableBoard+Public.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STTableBoard+Public.swift"; sourceTree = "<group>"; };
 		EB3D687D1C3B6C7E00C6EAFD /* TextComposeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextComposeView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		EB793B091C1E608900BF1148 = {
 			isa = PBXGroup;
 			children = (
+				3B95E0A6202706BA00FB9BD7 /* Montserrat-Medium.ttf */,
 				EBB2206A1D04F9100085C31F /* Frameworks */,
 				EB793B151C1E608900BF1148 /* STTableBoard */,
 				EB793B141C1E608900BF1148 /* Products */,
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B95E0A7202706BA00FB9BD7 /* Montserrat-Medium.ttf in Resources */,
 				EB7C97C41C21B2C300C68649 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

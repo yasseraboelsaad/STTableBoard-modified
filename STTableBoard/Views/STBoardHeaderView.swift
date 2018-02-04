@@ -27,8 +27,8 @@ public class STBoardHeaderView: UIView {
     public lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.font = TableBoardCommonConstant.labelFont
-        label.textColor = UIColor.darkGrayTextColor
+        label.font = UIFont(name: "Avenir-Medium", size: 14)!
+        label.textColor = UIColor.black
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         return label
@@ -68,14 +68,24 @@ public class STBoardHeaderView: UIView {
         let leading: CGFloat = BoardHeaderViewConstant.labelLeading
         let spacing: CGFloat = 0.0
         let trailing: CGFloat = 0.0
-        let horizontalConstraits = NSLayoutConstraint.constraints(withVisualFormat: "H:|-leading-[titleLabel]-spacing@500-[numberLabel]-spacing-[actionButton]-trailing-|", options: [], metrics: ["leading":leading, "trailing":trailing, "spacing":spacing], views: ["titleLabel":titleLabel, "numberLabel":numberLabel, "actionButton":actionButton])
+        let horizontalConstraits = NSLayoutConstraint.constraints(withVisualFormat: "H:|-[numberLabel]-spacing-[actionButton]-trailing-|", options: [], metrics: ["leading":leading, "trailing":trailing, "spacing":spacing], views: ["numberLabel":numberLabel, "actionButton":actionButton])
+       
         let titleLabelVerticalConstrait = NSLayoutConstraint(item: titleLabel,
-            attribute: .top,
+            attribute: .centerY,
             relatedBy: .equal,
             toItem: self,
-            attribute: .top,
+            attribute: .centerY,
             multiplier: 1.0,
-            constant: BoardHeaderViewConstant.labelTop)
+            constant: 0)
+        
+        let titleLabelHorizontalConstrait = NSLayoutConstraint(item: titleLabel,
+                                                             attribute: .leading,
+                                                             relatedBy: .equal,
+                                                             toItem: self,
+                                                             attribute: .leading,
+                                                             multiplier: 1.0,
+                                                             constant: 20)
+        
         let numberLabelConstraits = NSLayoutConstraint(item: numberLabel,
                                                        attribute: .centerY,
                                                        relatedBy: .equal,
@@ -88,7 +98,7 @@ public class STBoardHeaderView: UIView {
 //        let buttonCenterY = NSLayoutConstraint(item: actionButton, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1.0, constant: 0)
         let buttonVerticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[actionButton]|", options: [], metrics: nil, views: ["actionButton":actionButton])
         
-        NSLayoutConstraint.activate(horizontalConstraits + buttonVerticalConstraints + [titleLabelVerticalConstrait, numberLabelConstraits, buttonWidth])
+        NSLayoutConstraint.activate(horizontalConstraits + buttonVerticalConstraints + [titleLabelVerticalConstrait, numberLabelConstraits, buttonWidth, titleLabelHorizontalConstrait])
         
     }
     
