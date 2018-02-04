@@ -98,9 +98,8 @@ class TextComposeView: UIView {
     @objc func doneButtonClicked(_ sender: UIButton) {
         if let text = textField.text {
             let trimedText = text.trim()
-            if !trimedText.isEmpty {
-                delegate?.textComposeView(textComposeView: self, didClickDoneButton: doneButton, withText: trimedText)
-            }
+            delegate?.textComposeView(textComposeView: self, didClickDoneButton: doneButton, withText: trimedText)
+            
         }
     }
     
