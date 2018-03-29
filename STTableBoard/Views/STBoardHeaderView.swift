@@ -66,6 +66,8 @@ public class STBoardHeaderView: UIView {
         numberLabel.translatesAutoresizingMaskIntoConstraints = false
         actionButton.translatesAutoresizingMaskIntoConstraints = false
         
+        actionButton.isHidden = true
+        
         let leading: CGFloat = BoardHeaderViewConstant.labelLeading
         let spacing: CGFloat = 0.0
         let trailing: CGFloat = 0.0

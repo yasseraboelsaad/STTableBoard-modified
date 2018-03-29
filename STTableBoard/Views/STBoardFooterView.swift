@@ -48,6 +48,7 @@ public class STBoardFooterView: UIView {
         
         addSubview(titleButton)
         titleButton.translatesAutoresizingMaskIntoConstraints = false
+        titleButton.isHidden = true
         
         let views = ["titleButton": titleButton]
         let titleButtonHorizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-8-[titleButton]-8-|", options: [], metrics: nil, views: views)
